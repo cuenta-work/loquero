@@ -1,0 +1,23 @@
+{
+  "name": "Loquero — Historia clínica",
+  "short_name": "Loquero",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "es-AR",
+  "description": "Homenaje no oficial a Loquero: punk de Mar del Plata desde 1991, doce discos, treinta y cinco años y Fantasy tocado entero.",
+  "categories": ["music", "entertainment"],
+  "background_color": "#f6f3ea",
+  "theme_color": "#f6f3ea",
+  "screenshots": [
+    {"src": "/capturas/app-wide.webp", "sizes": "1280x720", "type": "image/webp", "form_factor": "wide", "label": "Loquero: historia clínica de una banda"},
+    {"src": "/capturas/app-narrow.webp", "sizes": "390x844", "type": "image/webp", "form_factor": "narrow", "label": "Prendé el monitor y recorré 35 años de punk marplatense"}
+  ],
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

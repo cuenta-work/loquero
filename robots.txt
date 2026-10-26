@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://loquero.fungirak.com/sitemap.xml
