@@ -43,6 +43,9 @@ a:hover{color:var(--tinta)}
 ::selection{background:var(--e3);color:#151413}
 button{font:inherit;color:inherit;cursor:pointer}
 :focus-visible{outline:3px solid var(--e2);outline-offset:3px;border-radius:4px}
+html{-webkit-tap-highlight-color:transparent}
+:focus:not(:focus-visible){outline:none}
+@media (hover:none){button:active,.btn:active,.pl:active{filter:brightness(.88)}.pl{padding:6px 12px}}
 @media (hover:hover) and (pointer:fine){body.cur,body.cur *{cursor:none!important}}
 b{font-weight:700}
 s{text-decoration-thickness:3px;text-decoration-color:var(--e2)}
@@ -503,7 +506,7 @@ footer a:hover{color:var(--amar)}
 }
 @media (max-width:900px){
   section{padding:120px 18px 30px}
-  .hero-grid,.radio,.bio,.mapwrap,.grid2,.disc,.poem,footer .inner{grid-template-columns:1fr}
+  .hero-grid,.radio,.bio,.mapwrap,.grid2,.disc,.poem,footer .inner{grid-template-columns:minmax(0,1fr)}
   .hero{padding-top:110px}
   .hero-art{min-height:0;margin:20px 16px 80px}
   .negatoscopio{margin:0 auto;width:min(84%,340px)}
@@ -546,8 +549,12 @@ footer a:hover{color:var(--amar)}
   .stat b{font-size:26px}
   .eras,.lab,.dna{grid-template-columns:1fr}
   .era{min-height:0}
-  h1 .logo{font-size:23vw}
-  html[data-era="11"] h1 .logo{font-size:17vw}
+  h1 .logo{font-size:min(23vw,calc((100vw - 44px)/4.2))}
+  html[data-era="97"] h1 .logo{font-size:calc((100vw - 44px)/4.45)}
+  html[data-era="99"] h1 .logo{font-size:calc((100vw - 44px)/4.8)}
+  html[data-era="01"] h1 .logo{font-size:calc((100vw - 44px)/4.55)}
+  html[data-era="04"] h1 .logo{font-size:calc((100vw - 44px)/6.35)}
+  html[data-era="11"] h1 .logo{font-size:calc((100vw - 44px)/5.4)}
   .cinta-top{font-size:13px}
   .card{padding:16px}
   .tabs button{font-size:14px;padding:8px 14px}
