@@ -1,5 +1,5 @@
 // Service worker mínimo: hace la app instalable y deja ver la última versión sin conexión.
-const CACHE = 'loquero-v1';
+const CACHE = 'loquero-v2';
 const SHELL = ['/', '/styles.css', '/data.js', '/app.js', '/icon.svg', '/icon-192.png'];
 
 self.addEventListener('install', e => {

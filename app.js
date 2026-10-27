@@ -40,7 +40,7 @@ const findPL=id=>PL.findIndex(p=>p[0]===id);
 // [fecha, tipo, título, texto, dudoso]
 const TL=[
  ["fines de los 80","origen","Seis punks en La Feliz","Claudio Fernández, Chary, ve a Moris a los 15, deja el secundario en tercer año en el Don Bosco de Mar del Plata y viaja los fines de semana a Buenos Aires a comprar discos. En diciembre de 1987 ve a Sumo en el Teatro San Martín de la ciudad. «Como mucho éramos seis punks»."],
- ["fines de los 80","origen","Submision y Todos Contra Todos","Primero Submision, con Chary en guitarra y voz: dos shows. Después Todos Contra Todos, ruidosa y contestataria: los detienen la noche antes de tocar en Buenos Aires y después tocan en el Teatro Roma, en un festival de <i>Rebelión Rock</i>."],
+ ["fines de los 80","origen","Submision y Todos Contra Todos","Primero Submision, con Chary en guitarra y voz: dos shows. Después Todos Contra Todos, furiosa y contestataria: los detienen la noche antes de tocar en Buenos Aires y después tocan en el Teatro Roma, en un festival de <i>Rebelión Rock</i>."],
  ["sin fecha","origen","«¿Venís del loquero vos?»","Lo detienen por la pinta, con el pelo cortado a mechones y una muñequera con clavos, y lo encierran en el calabozo de adultos. Un preso tatuado lo toma por paciente de un psiquiátrico. Así se llamará la banda."],
  ["27 mar 1991","origen","Dos universos","Es la fecha que da Yamandú. Él trae Joy Division, Sonic Youth y Siouxsie; Chary, Ramones, La Polla Records y Eskorbuto.",1],
  ["1991","disco","El que no se consuela es porque no quiere","Gerardo Dekadencia les propone grabar un demo para un concurso de bandas under en Berlín; el premio es un viaje a Alemania. Suman al «Chino» en batería y a «Canuto» en bajo. No clasifican. El casete se vende en los shows: unas doscientas copias."],
@@ -230,7 +230,7 @@ const TACH=new Set(["pop","perfecto","punk"]);
   const cb=mk("circle",{cx:B.x,cy:B.y,r:B.r,fill:"var(--e2)","fill-opacity":.32,stroke:"var(--tinta)","stroke-width":2.5},s);
   const T=(x,y,t,o={})=>{const e=mk("text",{x,y,"text-anchor":"middle","font-size":o.s||15,"font-weight":o.w||600,...(o.f?{"font-family":o.f}:{})},s);e.textContent=t;return e};
   T(250,70,"Yamandú",{s:22,w:800});T(250,92,"guitarra · «ideólogo sonoro»",{s:12});
-  ["Joy Division","Sonic Youth","Siouxsie","ruido y texturas","post-punk"].forEach((t,i)=>T(240,135+i*30,t));
+  ["Joy Division","Sonic Youth","Siouxsie","distorsión y texturas","post-punk"].forEach((t,i)=>T(240,135+i*30,t));
   T(650,70,"Chary",{s:22,w:800});T(650,92,"voz y letras",{s:12});
   ["Ramones","La Polla Records","Eskorbuto","Kiss, Moris, Sumo","el punk de barrio"].forEach((t,i)=>T(660,135+i*30,t));
   T(450,165,"LOQUERO",{s:26,w:400,f:"Permanent Marker"});T(450,190,"«el encuentro",{s:12.5});T(450,206,"entre dos universos»",{s:12.5});T(450,232,"Yamandú, 2026",{s:10.5,w:500});
@@ -240,7 +240,7 @@ const TACH=new Set(["pop","perfecto","punk"]);
 const I=p=>`<svg viewBox="0 0 64 64" fill="none" stroke="#151413" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
 const LAB=[
  ["La voz de Chary","Casi hablada, gritada o rota, con recitados y frases en inglés mal puesto a propósito.",I('<rect x="24" y="6" width="16" height="28" rx="8" fill="#ff1f8f"/><path d="M16 30c0 9 7 15 16 15s16-6 16-15M32 45v12M22 57h20"/>')],
- ["La guitarra de Yamandú","Ruido, acoples y texturas: «muchas gracias por bancar al ruido y a los músicos que hacemos ruido».",I('<path d="M44 4l16 16-5 2-15 15" fill="#5dbb4f"/><path d="M40 24L16 48a8 8 0 1 1-6-6l24-24"/><circle cx="14" cy="50" r="3" fill="#151413"/>')],
+ ["La guitarra de Yamandú","Distorsión, acoples y texturas: «muchas gracias por bancar al ruido y a los músicos que hacemos ruido».",I('<path d="M44 4l16 16-5 2-15 15" fill="#5dbb4f"/><path d="M40 24L16 48a8 8 0 1 1-6-6l24-24"/><circle cx="14" cy="50" r="3" fill="#151413"/>')],
  ["Tres acordes","El método de <i>Espíritu de 3 tonos</i>: achicar la armonía hasta lo mínimo.",I('<path d="M8 14h48M8 24h48M8 34h48M8 44h48" stroke="#8f8b80"/><circle cx="18" cy="24" r="5" fill="#5dbb4f"/><circle cx="32" cy="34" r="5" fill="#ff1f8f"/><circle cx="46" cy="14" r="5" fill="#ffe500"/>')],
  ["Bajo y batería","Aku Almada en el bajo desde la época de <i>Fantasy</i> e Ito Almada en la batería: la base de hoy.",I('<ellipse cx="32" cy="40" rx="20" ry="7" fill="#ffe500"/><path d="M12 40v10c0 4 9 7 20 7s20-3 20-7V40"/><path d="M8 8l18 22M56 8L38 30"/>')],
  ["Batería electrónica","Los demos de <i>Fantasy</i> nacieron en una pieza, con computadora y batería electrónica.",I('<rect x="6" y="14" width="52" height="34" rx="3" fill="#2bff6a"/><path d="M14 24h8v8h-8zM28 24h8v8h-8zM42 24h8v8h-8zM14 36h36"/>')],
