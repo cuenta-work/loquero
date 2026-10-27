@@ -447,7 +447,7 @@ footer a:hover{color:var(--amar)}
 .hecho{text-align:center;font-weight:700;font-size:13px;margin-top:60px;color:#a8a49b;font-family:var(--maq)}
 
 /* ---------- REPRODUCTOR ---------- */
-.player{position:fixed;left:50%;bottom:14px;transform:translate(-50%,160%);z-index:200;width:min(760px,calc(100% - 200px));display:grid;grid-template-columns:128px 1fr auto;gap:16px;align-items:center;background:#060706;color:#cff7d6;border:2px solid #2bff6a;border-radius:12px;padding:10px 14px 10px 10px;box-shadow:6px 6px 0 var(--e2),0 0 30px rgba(43,255,106,.15);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.player{position:fixed;left:50%;bottom:14px;transform:translate(-50%,160%);z-index:200;width:min(760px,calc(100% - 200px));display:grid;grid-template-columns:128px minmax(0,1fr) auto;gap:16px;align-items:center;background:#060706;color:#cff7d6;border:2px solid #2bff6a;border-radius:12px;padding:10px 22px 10px 10px;box-shadow:6px 6px 0 var(--e2),0 0 30px rgba(43,255,106,.15);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .player.show{transform:translate(-50%,0)}
 .player .mini{width:128px;height:72px;border-radius:6px;overflow:hidden;background:#000}
 .player .mini iframe{width:128px;height:72px;display:block}
@@ -455,6 +455,7 @@ footer a:hover{color:var(--amar)}
 .player .t{font-weight:800;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .player .bar{height:8px;background:#0e130f;border:1.5px solid #1f3524;border-radius:999px;margin-top:8px;cursor:pointer;overflow:hidden}
 .player .bar i{display:block;height:100%;width:0;background:#2bff6a;box-shadow:0 0 8px #2bff6a}
+.player .info{min-width:0}
 .player .ctr{display:flex;align-items:center;gap:8px}
 .player .ib{background:#0a0d0a;color:#cff7d6;border-color:#2bff6a}
 .player .ib:hover{background:#12301b}
@@ -526,7 +527,7 @@ footer a:hover{color:var(--amar)}
   .planilla::after{left:30px}
   .oscura::before{inset:100px 4px 0}
   .oscura{padding-left:24px;padding-right:24px}
-  .player{grid-template-columns:auto 1fr;gap:10px}
+  .player{grid-template-columns:minmax(0,1fr);gap:10px;padding:12px 14px}
   .player .mini{width:0;height:0;position:absolute;opacity:0;pointer-events:none}
   .player .info{grid-column:1/-1;order:-1;padding-right:20px}
   .player .ctr{grid-column:1/-1;justify-content:center}
